@@ -2,5 +2,5 @@
 
 init:
 	go run github.com/99designs/gqlgen init
-compile:
+gen:
 	go run github.com/99designs/gqlgen generate

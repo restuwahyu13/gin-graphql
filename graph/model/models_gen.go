@@ -3,7 +3,7 @@
 package model
 
 type Student struct {
-	ID          in     `json:"id"`
+	ID          string `json:"id"`
 	Name        string `json:"name"`
 	Npm         int    `json:"npm"`
 	BidangStudi string `json:"bidangStudi"`
