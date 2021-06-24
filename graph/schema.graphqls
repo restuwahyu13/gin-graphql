@@ -1,0 +1,25 @@
+type Query {
+	students: [Student!]!
+	student(id: ID!): Student!
+}
+
+type Mutation {
+	createStudent(input: StudentInput!): Student!
+	deleteStudent(id: ID!): Student!
+	updateStudent(id: ID!, input: StudentInput!): Student!
+}
+
+type Student {
+	id: ID!
+	name: String!
+	npm: Int!
+	bidangStudi: String!
+	fakultas: String!
+}
+
+input StudentInput {
+	name: String!
+	npm: Int!
+	bidangStudi: String!
+	fakultas: String!
+}
