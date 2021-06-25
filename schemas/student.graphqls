@@ -1,9 +1,9 @@
-type Query {
+extend type Query {
 	students: [Student!]!
 	student(id: ID!): Student!
 }
 
-type Mutation {
+extend type Mutation {
 	createStudent(input: StudentInput!): Student!
 	deleteStudent(id: ID!): Student!
 	updateStudent(id: ID!, input: StudentInput!): Student!

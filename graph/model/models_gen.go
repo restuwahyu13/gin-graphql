@@ -16,3 +16,16 @@ type StudentInput struct {
 	BidangStudi string `json:"bidangStudi"`
 	Fakultas    string `json:"fakultas"`
 }
+
+type Teacher struct {
+	ID     string `json:"id"`
+	Name   string `json:"name"`
+	Gelar  string `json:"gelar"`
+	Malkul string `json:"malkul"`
+}
+
+type TeacherInput struct {
+	Name   string `json:"name"`
+	Gelar  string `json:"gelar"`
+	Malkul string `json:"malkul"`
+}

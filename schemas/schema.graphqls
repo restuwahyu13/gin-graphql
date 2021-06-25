@@ -1,0 +1,9 @@
+#####################################
+## Core Route Schema
+####################################
+
+## Query Schema Core
+type Query
+
+## Mutation Schema Core
+type Mutation

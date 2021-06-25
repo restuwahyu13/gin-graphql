@@ -1,0 +1,23 @@
+extend type Query {
+	teachers: [Student!]!
+	teacher(id: ID!): Student!
+}
+
+extend type Mutation {
+	createTeacher(input: TeacherInput!): Teacher!
+	deleteTeacher(id: ID!): Teacher!
+	updateTeacher(id: ID!, input: TeacherInput!): Teacher!
+}
+
+type Teacher {
+	id: ID!
+	name: String!
+	gelar: String!
+	malkul: String!
+}
+
+input TeacherInput {
+	name: String!
+	gelar: String!
+	malkul: String!
+}

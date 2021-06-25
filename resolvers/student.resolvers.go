@@ -7,7 +7,6 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/restuwahyu13/gin-graphql/graph/generated"
 	"github.com/restuwahyu13/gin-graphql/graph/model"
 )
 
@@ -30,12 +29,3 @@ func (r *queryResolver) Students(ctx context.Context) ([]*model.Student, error) 
 func (r *queryResolver) Student(ctx context.Context, id string) (*model.Student, error) {
 	panic(fmt.Errorf("not implemented"))
 }
-
-// Mutation returns generated.MutationResolver implementation.
-func (r *Resolver) Mutation() generated.MutationResolver { return &mutationResolver{r} }
-
-// Query returns generated.QueryResolver implementation.
-func (r *Resolver) Query() generated.QueryResolver { return &queryResolver{r} }
-
-type mutationResolver struct{ *Resolver }
-type queryResolver struct{ *Resolver }
